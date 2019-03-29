@@ -1,8 +1,8 @@
 # go-jira
 
-[![GoDoc](https://godoc.org/github.com/andygrunwald/go-jira?status.svg)](https://godoc.org/github.com/andygrunwald/go-jira)
-[![Build Status](https://travis-ci.org/andygrunwald/go-jira.svg?branch=master)](https://travis-ci.org/andygrunwald/go-jira)
-[![Go Report Card](https://goreportcard.com/badge/github.com/andygrunwald/go-jira)](https://goreportcard.com/report/github.com/andygrunwald/go-jira)
+[![GoDoc](https://godoc.org/github.com/johnpena/go-jira?status.svg)](https://godoc.org/github.com/johnpena/go-jira)
+[![Build Status](https://travis-ci.org/johnpena/go-jira.svg?branch=master)](https://travis-ci.org/johnpena/go-jira)
+[![Go Report Card](https://goreportcard.com/badge/github.com/johnpena/go-jira)](https://goreportcard.com/report/github.com/johnpena/go-jira)
 
 [Go](https://golang.org/) client library for [Atlassian JIRA](https://www.atlassian.com/software/jira).
 
@@ -25,7 +25,7 @@ This package was tested against JIRA v6.3.4 and v7.1.2.
 
 It is go gettable
 
-    $ go get github.com/andygrunwald/go-jira
+    $ go get github.com/johnpena/go-jira
 
 For stable versions you can use one of our tags with [gopkg.in](http://labix.org/gopkg.in). E.g.
 
@@ -33,26 +33,26 @@ For stable versions you can use one of our tags with [gopkg.in](http://labix.org
 package main
 
 import (
-	jira "gopkg.in/andygrunwald/go-jira.v1"
+	jira "gopkg.in/johnpena/go-jira.v1"
 )
 ...
 ```
 
 (optional) to run unit / example tests:
 
-    $ cd $GOPATH/src/github.com/andygrunwald/go-jira
+    $ cd $GOPATH/src/github.com/johnpena/go-jira
     $ go test -v ./...
 
 ## API
 
-Please have a look at the [GoDoc documentation](https://godoc.org/github.com/andygrunwald/go-jira) for a detailed API description.
+Please have a look at the [GoDoc documentation](https://godoc.org/github.com/johnpena/go-jira) for a detailed API description.
 
 The [latest JIRA REST API documentation](https://docs.atlassian.com/jira/REST/latest/) was the base document for this package.
 
 ## Examples
 
 Further a few examples how the API can be used.
-A few more examples are available in the [GoDoc examples section](https://godoc.org/github.com/andygrunwald/go-jira#pkg-examples).
+A few more examples are available in the [GoDoc examples section](https://godoc.org/github.com/johnpena/go-jira#pkg-examples).
 
 ### Get a single issue
 
@@ -63,7 +63,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/andygrunwald/go-jira"
+	"github.com/johnpena/go-jira"
 )
 
 func main() {
@@ -115,7 +115,7 @@ JIRA [deprecated this authentication method.](https://developer.atlassian.com/cl
 
 If you want to connect via OAuth to your JIRA Cloud instance checkout the [example of using OAuth authentication with JIRA in Go](https://gist.github.com/Lupus/edafe9a7c5c6b13407293d795442fe67) by [@Lupus](https://github.com/Lupus).
 
-For more details have a look at the [issue #56](https://github.com/andygrunwald/go-jira/issues/56).
+For more details have a look at the [issue #56](https://github.com/johnpena/go-jira/issues/56).
 
 ### Create an issue
 
@@ -126,7 +126,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/andygrunwald/go-jira"
+	"github.com/johnpena/go-jira"
 )
 
 func main() {
@@ -179,7 +179,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/andygrunwald/go-jira"
+	"github.com/johnpena/go-jira"
 )
 
 func main() {
@@ -213,7 +213,7 @@ func main() {
 
 ## Implementations
 
-* [andygrunwald/jitic](https://github.com/andygrunwald/jitic) - The JIRA Ticket Checker
+* [johnpena/jitic](https://github.com/johnpena/jitic) - The JIRA Ticket Checker
 
 ## Code structure
 
@@ -227,13 +227,13 @@ These services own a responsibility of the single endpoints / usecases of JIRA.
 
 Contribution, in any kind of way, is highly welcome!
 It doesn't matter if you are not able to write code.
-Creating issues or holding talks and help other people to use [go-jira](https://github.com/andygrunwald/go-jira) is contribution, too!
+Creating issues or holding talks and help other people to use [go-jira](https://github.com/johnpena/go-jira) is contribution, too!
 A few examples:
 
 * Correct typos in the README / documentation
 * Reporting bugs
 * Implement a new feature or endpoint
-* Sharing the love of [go-jira](https://github.com/andygrunwald/go-jira) and help people to get use to it
+* Sharing the love of [go-jira](https://github.com/johnpena/go-jira) and help people to get use to it
 
 If you are new to pull requests, checkout [Collaborating on projects using issues and pull requests / Creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
 
